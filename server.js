@@ -320,7 +320,7 @@ const dataMock = [
     state: 'complete',
   },
   {
-    issueDate: '2024-11-21',
+    issueDate: '2024-11-20',
     issueTime: '10:31:00',
     totalTransaction: 10,
     settledAmount: 2200000,
@@ -331,7 +331,7 @@ const dataMock = [
     state: 'complete',
   },
   {
-    issueDate: '2024-11-21',
+    issueDate: '2024-11-19',
     issueTime: '10:31:00',
     totalTransaction: 10,
     settledAmount: 2200000,
@@ -342,7 +342,7 @@ const dataMock = [
     state: 'complete',
   },
   {
-    issueDate: '2024-11-21',
+    issueDate: '2024-11-18',
     issueTime: '10:31:00',
     totalTransaction: 10,
     settledAmount: 2200000,
@@ -353,7 +353,7 @@ const dataMock = [
     state: 'complete',
   },
   {
-    issueDate: '2024-11-21',
+    issueDate: '2024-11-17',
     issueTime: '10:31:00',
     totalTransaction: 10,
     settledAmount: 2200000,
@@ -364,7 +364,7 @@ const dataMock = [
     state: 'complete',
   },
   {
-    issueDate: '2024-11-21',
+    issueDate: '2024-11-16',
     issueTime: '10:31:00',
     totalTransaction: 10,
     settledAmount: 2200000,
@@ -375,7 +375,7 @@ const dataMock = [
     state: 'complete',
   },
   {
-    issueDate: '2024-11-21',
+    issueDate: '2024-11-15',
     issueTime: '10:31:00',
     totalTransaction: 10,
     settledAmount: 2200000,
