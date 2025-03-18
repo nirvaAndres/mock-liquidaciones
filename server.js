@@ -9,8 +9,7 @@ const server = http.createServer(app);
 // Aca esta la data mock utilizada para este proyecto
 const dataMock = [
   {
-    issueDate: '2024-12-16',
-    issueTime: '10:31:00',
+    issueDate: '2025-03-18',
     totalTransaction: 0,
     settledAmount: 0,
     taxAmount: 0,
@@ -21,8 +20,29 @@ const dataMock = [
     url: 'https://example.com/report1',
   },
   {
-    issueDate: '2024-12-15',
-    issueTime: '10:31:00',
+    issueDate: '2025-03-18',
+    totalTransaction: 0,
+    settledAmount: 0,
+    taxAmount: 0,
+    totalCommissionAmount: 0,
+    collectionsDebts: 0,
+    totalCredited: 0,
+    state: 'empty',
+    url: 'https://example.com/report1',
+  },
+  {
+    issueDate: '2025-03-18',
+    totalTransaction: 0,
+    settledAmount: 0,
+    taxAmount: 0,
+    totalCommissionAmount: 0,
+    collectionsDebts: 0,
+    totalCredited: 0,
+    state: 'empty',
+    url: 'https://example.com/report1',
+  },
+  {
+    issueDate: '2025-03-18',
     totalTransaction: 0,
     settledAmount: 0,
     taxAmount: 0,
@@ -33,8 +53,7 @@ const dataMock = [
     url: 'https://example.com/report2',
   },
   {
-    issueDate: '2024-12-14',
-    issueTime: '10:31:00',
+    issueDate: '2025-03-18',
     totalTransaction: 0,
     settledAmount: 0,
     taxAmount: 0,
@@ -45,8 +64,7 @@ const dataMock = [
     url: 'https://example.com/report3',
   },
   {
-    issueDate: '2024-12-13',
-    issueTime: '10:31:00',
+    issueDate: '2025-03-18',
     totalTransaction: 0,
     settledAmount: 0,
     taxAmount: 0,
@@ -57,8 +75,7 @@ const dataMock = [
     url: 'https://example.com/report4',
   },
   {
-    issueDate: '2024-12-12',
-    issueTime: '10:31:00',
+    issueDate: '2025-03-18',
     totalTransaction: 20,
     settledAmount: 5000000,
     taxAmount: 10000,
@@ -69,8 +86,7 @@ const dataMock = [
     url: 'https://example.com/report5',
   },
   {
-    issueDate: '2024-12-11',
-    issueTime: '10:31:00',
+    issueDate: '2025-03-18',
     totalTransaction: 10,
     settledAmount: 2200000,
     taxAmount: 4400,
@@ -81,8 +97,7 @@ const dataMock = [
     url: 'https://example.com/report6',
   },
   {
-    issueDate: '2024-12-10',
-    issueTime: '10:31:00',
+    issueDate: '2025-03-18',
     totalTransaction: 9,
     settledAmount: 1900000,
     taxAmount: 3800,
@@ -93,8 +108,7 @@ const dataMock = [
     url: 'https://example.com/report7',
   },
   {
-    issueDate: '2024-12-09',
-    issueTime: '10:31:00',
+    issueDate: '2025-03-18',
     totalTransaction: 12,
     settledAmount: 2400000,
     taxAmount: 4800,
@@ -105,8 +119,7 @@ const dataMock = [
     url: 'https://example.com/report8',
   },
   {
-    issueDate: '2024-12-08',
-    issueTime: '10:31:00',
+    issueDate: '2025-03-18',
     totalTransaction: 15,
     settledAmount: 3000000,
     taxAmount: 6000,
@@ -117,8 +130,7 @@ const dataMock = [
     url: 'https://example.com/report9',
   },
   {
-    issueDate: '2024-12-07',
-    issueTime: '10:31:00',
+    issueDate: '2025-03-18',
     totalTransaction: 6,
     settledAmount: 1200000,
     taxAmount: 2400,
@@ -129,8 +141,7 @@ const dataMock = [
     url: 'https://example.com/report10',
   },
   {
-    issueDate: '2024-12-06',
-    issueTime: '10:31:00',
+    issueDate: '2025-03-18',
     totalTransaction: 11,
     settledAmount: 2200000,
     taxAmount: 4400,
@@ -141,8 +152,7 @@ const dataMock = [
     url: 'https://example.com/report11',
   },
   {
-    issueDate: '2024-12-05',
-    issueTime: '10:31:00',
+    issueDate: '2025-03-18',
     totalTransaction: 8,
     settledAmount: 1600000,
     taxAmount: 3200,
@@ -153,8 +163,7 @@ const dataMock = [
     url: 'https://example.com/report12',
   },
   {
-    issueDate: '2024-12-04',
-    issueTime: '10:31:00',
+    issueDate: '2025-03-18',
     totalTransaction: 14,
     settledAmount: 2800000,
     taxAmount: 5600,
@@ -165,8 +174,7 @@ const dataMock = [
     url: 'https://example.com/report13',
   },
   {
-    issueDate: '2024-12-03',
-    issueTime: '10:31:00',
+    issueDate: '2025-03-18',
     totalTransaction: 5,
     settledAmount: 1000000,
     taxAmount: 2000,
@@ -177,8 +185,7 @@ const dataMock = [
     url: 'https://example.com/report14',
   },
   {
-    issueDate: '2024-12-02',
-    issueTime: '10:31:00',
+    issueDate: '2025-03-18',
     totalTransaction: 20,
     settledAmount: 5000000,
     taxAmount: 10000,
@@ -189,8 +196,7 @@ const dataMock = [
     url: 'https://example.com/report15',
   },
   {
-    issueDate: '2024-12-01',
-    issueTime: '10:31:00',
+    issueDate: '2025-03-18',
     totalTransaction: 10,
     settledAmount: 2200000,
     taxAmount: 4400,
@@ -201,8 +207,7 @@ const dataMock = [
     url: 'https://example.com/report16',
   },
   {
-    issueDate: '2024-11-30',
-    issueTime: '10:31:00',
+    issueDate: '2025-03-18',
     totalTransaction: 9,
     settledAmount: 1900000,
     taxAmount: 3800,
@@ -213,8 +218,7 @@ const dataMock = [
     url: 'https://example.com/report17',
   },
   {
-    issueDate: '2024-11-29',
-    issueTime: '10:31:00',
+    issueDate: '2025-03-18',
     totalTransaction: 12,
     settledAmount: 2400000,
     taxAmount: 4800,
@@ -225,8 +229,7 @@ const dataMock = [
     url: 'https://example.com/report18',
   },
   {
-    issueDate: '2024-11-28',
-    issueTime: '10:31:00',
+    issueDate: '2025-03-18',
     totalTransaction: 15,
     settledAmount: 3000000,
     taxAmount: 6000,
@@ -237,8 +240,7 @@ const dataMock = [
     url: 'https://example.com/report19',
   },
   {
-    issueDate: '2024-11-27',
-    issueTime: '10:31:00',
+    issueDate: '2025-03-18',
     totalTransaction: 6,
     settledAmount: 1200000,
     taxAmount: 2400,
@@ -249,8 +251,7 @@ const dataMock = [
     url: 'https://example.com/report20',
   },
   {
-    issueDate: '2024-11-26',
-    issueTime: '10:31:00',
+    issueDate: '2025-03-18',
     totalTransaction: 11,
     settledAmount: 2200000,
     taxAmount: 4400,
@@ -261,8 +262,7 @@ const dataMock = [
     url: 'https://example.com/report21',
   },
   {
-    issueDate: '2024-11-25',
-    issueTime: '10:31:00',
+    issueDate: '2025-03-18',
     totalTransaction: 8,
     settledAmount: 1600000,
     taxAmount: 3200,
@@ -273,8 +273,7 @@ const dataMock = [
     url: 'https://example.com/report22',
   },
   {
-    issueDate: '2024-11-24',
-    issueTime: '10:31:00',
+    issueDate: '2025-03-18',
     totalTransaction: 14,
     settledAmount: 2800000,
     taxAmount: 5600,
@@ -285,8 +284,7 @@ const dataMock = [
     url: 'https://example.com/report23',
   },
   {
-    issueDate: '2024-11-23',
-    issueTime: '10:31:00',
+    issueDate: '2025-03-18',
     totalTransaction: 5,
     settledAmount: 1000000,
     taxAmount: 2000,
@@ -298,7 +296,6 @@ const dataMock = [
   },
   {
     issueDate: '2024-11-22',
-    issueTime: '10:31:00',
     totalTransaction: 20,
     settledAmount: 5000000,
     taxAmount: 10000,
@@ -310,7 +307,6 @@ const dataMock = [
   },
   {
     issueDate: '2024-11-21',
-    issueTime: '10:31:00',
     totalTransaction: 10,
     settledAmount: 2200000,
     taxAmount: 4400,
@@ -321,7 +317,6 @@ const dataMock = [
   },
   {
     issueDate: '2024-11-20',
-    issueTime: '10:31:00',
     totalTransaction: 10,
     settledAmount: 2200000,
     taxAmount: 4400,
@@ -332,7 +327,6 @@ const dataMock = [
   },
   {
     issueDate: '2024-11-19',
-    issueTime: '10:31:00',
     totalTransaction: 10,
     settledAmount: 2200000,
     taxAmount: 4400,
@@ -343,7 +337,6 @@ const dataMock = [
   },
   {
     issueDate: '2024-11-18',
-    issueTime: '10:31:00',
     totalTransaction: 10,
     settledAmount: 2200000,
     taxAmount: 4400,
@@ -354,7 +347,6 @@ const dataMock = [
   },
   {
     issueDate: '2024-11-17',
-    issueTime: '10:31:00',
     totalTransaction: 10,
     settledAmount: 2200000,
     taxAmount: 4400,
@@ -365,7 +357,6 @@ const dataMock = [
   },
   {
     issueDate: '2024-11-16',
-    issueTime: '10:31:00',
     totalTransaction: 10,
     settledAmount: 2200000,
     taxAmount: 4400,
@@ -376,7 +367,6 @@ const dataMock = [
   },
   {
     issueDate: '2024-11-15',
-    issueTime: '10:31:00',
     totalTransaction: 10,
     settledAmount: 2200000,
     taxAmount: 4400,
