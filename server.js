@@ -2805,6 +2805,15 @@ app.post('/consolidados', (req, res) => {
   });
 });
 
+app.post('/getRequestId', (req, res) => {
+  const { date, output } = req.body;
+  res.json({
+    message: 'Solicitud procesada correctamente',
+    status: 'Success',
+    requestId: 'pruebaandres',
+  });
+});
+
 // Servir archivos estáticos (como el archivo HTML del cliente)
 app.use(express.static('public'));
 
