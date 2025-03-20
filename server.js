@@ -507,7 +507,7 @@ app.post('/consolidados', (req, res) => {
   // Obtener los registros paginados
   const result = dataMock.slice(startIndex, endIndex);
 
-  if (type === 'month') {
+  if (type === 'specificMonth') {
     res.json({
       code: 1,
       message: 'Created',
