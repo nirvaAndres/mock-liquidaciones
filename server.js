@@ -386,7 +386,7 @@ const dataMockMonth = [
     totalCommissionAmount: 120000,
     collectionsDebts: 17000,
     totalCredited: 3500000,
-    state: 'complete',
+    state: 'uninitialized',
     url: 'https://example.com/report18',
   },
   {
@@ -397,7 +397,7 @@ const dataMockMonth = [
     totalCommissionAmount: 150000,
     collectionsDebts: 25000,
     totalCredited: 4500000,
-    state: 'regenerate',
+    state: 'uninitialized',
     url: 'https://example.com/report19',
   },
   {
@@ -408,7 +408,7 @@ const dataMockMonth = [
     totalCommissionAmount: 120000,
     collectionsDebts: 17000,
     totalCredited: 3500000,
-    state: 'complete',
+    state: 'uninitialized',
     url: 'https://example.com/report18',
   },
 ];
