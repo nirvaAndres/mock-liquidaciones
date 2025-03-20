@@ -499,16 +499,15 @@ app.post('/consolidados', (req, res) => {
   const pageNumber = req.body.pagination.page;
   const limitNumber = req.body.pagination.pageSize || 25;
   const type = req.body.date.type;
-  console.log(type);
 
   // Calcular el índice inicial y final para la paginación
   const startIndex = (pageNumber - 1) * limitNumber;
   const endIndex = pageNumber * limitNumber;
 
   // Obtener los registros paginados
-  const result = dataMock.slice(startIndex, endIndex);
 
-  if (type === 'specificMonth') {
+  if (type === 'month') {
+    let result = dataMockMonth.slice(startIndex, endIndex);
     res.json({
       code: 1,
       message: 'Created',
@@ -532,6 +531,7 @@ app.post('/consolidados', (req, res) => {
       },
     });
   } else {
+    let result = dataMock.slice(startIndex, endIndex);
     res.json({
       code: 1,
       message: 'Created',
