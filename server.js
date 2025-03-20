@@ -444,7 +444,7 @@ wss.on('connection', (ws) => {
       ws.send(
         JSON.stringify({
           requestId: 'req-12345',
-          status: 'PENDING',
+          status: 'pending',
           message: 'La solicitud ha sido recibida y está en proceso de creación de archivo.',
           issueDate: receivedData.date.specificDay,
         })
@@ -456,7 +456,7 @@ wss.on('connection', (ws) => {
         ws.send(
           JSON.stringify({
             requestId: 'req-12346',
-            status: 'REGENERATE',
+            status: 'regenerate',
             message: 'Error en la generación del consolidado.',
             issueDate: receivedData.date.specificDay,
           })
@@ -468,7 +468,7 @@ wss.on('connection', (ws) => {
         ws.send(
           JSON.stringify({
             requestId: 'req-12347',
-            status: 'COMPLETE',
+            status: 'complete',
             message: 'Consolidado generado exitosamente.',
             downloadUrl: 'https://filesamples.com/samples/document/csv/sample1.csv',
             issueDate: receivedData.date.specificDay,
@@ -479,7 +479,7 @@ wss.on('connection', (ws) => {
       ws.send(
         JSON.stringify({
           requestId: 'req-12348',
-          status: 'REGENERATE',
+          status: 'regenerate',
           message: 'Error en la generación del consolidado.',
           issueDate: receivedData.date.specificDay,
         })
