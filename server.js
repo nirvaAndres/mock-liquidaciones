@@ -461,7 +461,7 @@ wss.on('connection', (ws) => {
             issueDate: receivedData.date.specificDay,
           })
         );
-      }, 4000);
+      }, 2000);
 
       // Supongamos que se presenta un problema en la generación del archivo
       setTimeout(() => {
@@ -474,7 +474,7 @@ wss.on('connection', (ws) => {
             issueDate: receivedData.date.specificDay,
           })
         );
-      }, 8000);
+      }, 4000);
     } catch (error) {
       ws.send(
         JSON.stringify({
