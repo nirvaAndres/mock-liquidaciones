@@ -521,8 +521,8 @@ app.post('/consolidados', (req, res) => {
         pagination: {
           page: req.body.pagination.page,
           pageSize: limitNumber,
-          totalRecords: dataMock.length,
-          totalPages: Math.ceil(dataMock.length / limitNumber),
+          totalRecords: dataMockMonth.length,
+          totalPages: Math.ceil(dataMockMonth.length / limitNumber),
         },
         status: {
           code: 200,
@@ -544,8 +544,8 @@ app.post('/consolidados', (req, res) => {
         pagination: {
           page: req.body.pagination.page,
           pageSize: limitNumber,
-          totalRecords: dataMockMonth.length,
-          totalPages: Math.ceil(dataMockMonth.length / limitNumber),
+          totalRecords: dataMock.length,
+          totalPages: Math.ceil(dataMock.length / limitNumber),
         },
         status: {
           code: 200,
