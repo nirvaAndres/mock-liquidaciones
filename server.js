@@ -470,7 +470,7 @@ wss.on('connection', (ws) => {
             requestId: 'req-12347',
             status: 'COMPLETE',
             message: 'Consolidado generado exitosamente.',
-            downloadUrl: 'https://example-bucket.s3.amazonaws.com/procesados/file.csv?signature=abc123',
+            downloadUrl: 'https://filesamples.com/samples/document/csv/sample1.csv',
             issueDate: receivedData.date.specificDay,
           })
         );
