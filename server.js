@@ -427,9 +427,6 @@ app.use(express.json());
 wss.on('connection', (ws) => {
   console.log('Nuevo cliente conectado');
 
-  // Enviar un mensaje de bienvenida cuando un cliente se conecta
-  ws.send(JSON.stringify({ message: 'Bienvenido a la comunicación en tiempo real!', status: 'pending', issueDate: receivedData.date.specificDay }));
-
   // Escuchar por mensajes del cliente
   ws.on('message', (data) => {
     try {
