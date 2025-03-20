@@ -499,6 +499,7 @@ app.post('/consolidados', (req, res) => {
   const pageNumber = req.body.pagination.page;
   const limitNumber = req.body.pagination.pageSize || 25;
   const type = req.body.date.type;
+  console.log(type);
 
   // Calcular el índice inicial y final para la paginación
   const startIndex = (pageNumber - 1) * limitNumber;
